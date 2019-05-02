@@ -8,7 +8,8 @@ const cors = require("cors");
 app.use(cors());
 // Connect To DB 
 const dbServer = require("../Database/DbServer");
-
+// Route  Manager
+require("../Routes/RouteManager")(app);
 
 app.listen(port, () => {
     console.log("Server is listening...");
