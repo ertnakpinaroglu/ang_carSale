@@ -1,3 +1,15 @@
-<p>
-  getAllCars works!
-</p>
+<div class="row" *ngIf="allCars">
+
+
+  <div class="card border-primary mb-3" *ngFor="let item of allCars" style="max-width: 20rem;">
+    <div class="card-header"> {{item.mark}} - {{item.model}} </div>
+    <div class="card-body">
+      <h4 class="card-title"> {{item.model}} </h4>
+      <!-- <p class="card-text">
+        {{item.mark }} - {{item.model}}
+      </p> -->
+      <img src="https://im0-tub-tr.yandex.net/i?id=03d6328c0f68e48112910f5d580e0b74&n=13&exp=1" class="img-thumbnail" />
+    </div>
+  </div>
+
+</div>

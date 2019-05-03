@@ -10,6 +10,8 @@ app.use(cors());
 const dbServer = require("../Database/DbServer");
 // Route  Manager
 require("../Routes/RouteManager")(app);
+// simdilik ekle 
+
 
 app.listen(port, () => {
     console.log("Server is listening...");
