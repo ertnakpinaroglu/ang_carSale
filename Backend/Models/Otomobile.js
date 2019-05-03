@@ -8,7 +8,7 @@ const otomobileScheme = mongoose.Schema({
     year: { type: Number },
     fuel: { type: String },
     gear: { type: String },
-    km: { type: Float64Array },
+    km: { type: Number },
     chassisType: { type: String },
     enginePower: { type: String },
     engineDisplacement: { type: String },
